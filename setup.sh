@@ -4,10 +4,14 @@ sh -c "$(curl -fsLS chezmoi.io/get)" -- init --apply https://github.com/maschulz
 
 sudo dnf update
 
-sudo dnf install git vim bspwm sddm picom thunar kitty nitrogen polybar sxhkd rofi fontawesome-fonts fontawesome-fonts-web firefox arandr alsa-utils lxpolkit pavucontrol light pipewire neofetch sddm-breeze wmname
+sudo dnf install git vim bspwm sddm picom thunar kitty nitrogen polybar sxhkd rofi fontawesome-fonts fontawesome-fonts-web firefox arandr alsa-utils lxpolkit pavucontrol light pipewire neofetch sddm-breeze wmname plymouth-theme-spinner
 
 sudo systemctl enable sddm
 sudo systemctl set-default graphical.target
+
+sudo plymouth-set-default-theme spinner
+
+sudo dracut -f -v
 
 git clone --depth 1 https://github.com/ryanoasis/nerd-fonts
 cd nerd-fonts
