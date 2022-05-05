@@ -1,5 +1,7 @@
 #!/bin/sh
 
+cd ~
+
 sh -c "$(curl -fsLS chezmoi.io/get)" -- init --apply https://github.com/maschulze/fedora-bspwm-dotfiles
 
 sudo dnf update
