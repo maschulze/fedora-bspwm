@@ -13,9 +13,10 @@ sudo plymouth-set-default-theme spinner
 
 sudo dracut -f -v
 
-git clone --depth 1 https://github.com/ryanoasis/nerd-fonts
-cd nerd-fonts
-./install.sh FiraCode
-./install.sh Meslo
-cd ..
-rm -rf nerd-fonts
+curl -L https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/FiraCode.zip -o FiraCode.zip
+unzip FiraCode.zip -d .local/share/fonts/FiraCode
+
+curl -L https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/Meslo.zip -o Meslo.zip
+unzip Meslo.zip -d .local/share/fonts/Meslo
+
+fc-cache -vf
