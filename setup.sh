@@ -8,6 +8,8 @@ sudo dnf update
 
 sudo dnf install git vim bspwm sddm picom thunar kitty nitrogen polybar sxhkd rofi fontawesome-fonts fontawesome-fonts-web firefox arandr alsa-utils lxpolkit pavucontrol light pipewire neofetch wmname plymouth-theme-spinner
 
+sudo dnf install libvirt-devel virt-top libguestfs-tools guestfs-tools
+
 sudo systemctl enable sddm
 sudo systemctl set-default graphical.target
 
