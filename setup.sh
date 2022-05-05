@@ -8,3 +8,10 @@ sudo dnf install git vim bspwm sddm picom thunar kitty nitrogen polybar sxhkd ro
 
 sudo systemctl enable sddm
 sudo systemctl set-default graphical.target
+
+git clone --depth 1 https://github.com/ryanoasis/nerd-fonts
+cd nerd-fonts
+./install.sh FiraCode
+./install.sh Meslo
+cd ..
+rm -rf nerd-fonts
