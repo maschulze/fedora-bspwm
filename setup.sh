@@ -15,6 +15,8 @@ sudo plymouth-set-default-theme spinner
 
 sudo dracut -f -v
 
+mkdir .local/share/fonts
+
 curl -L https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/FiraCode.zip -o FiraCode.zip
 unzip FiraCode.zip -d .local/share/fonts/FiraCode
 
